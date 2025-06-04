@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Forum';
+    src: url('../Fonts/Forum/Forum-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('../Fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+ body {
+    font-family: 'Forum', serif;
+    background-color: #4c1c24;
+    color: #f4e9e1;
+  }
+  
+ h1{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #c3a75e;
+    text-shadow: 2px 2px #1a1a1a;
+  }
+
+.contenedor{
+    height: auto;
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+iframe {
+    border: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+
+  
