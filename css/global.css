@@ -16,27 +16,103 @@
     font-family: 'Forum', serif;
     background-color: #4c1c24;
     color: #f4e9e1;
+    font-size: 20px;
   }
   
  h1{
     font-family: 'Playfair Display', serif;
     font-style: italic;
+    font-size: 55px;
     color: #c3a75e;
     text-shadow: 2px 2px #1a1a1a;
   }
 
 .contenedor{
-    height: auto;
-    width: 800px;
     text-align: center;
     margin: 0 auto;
     padding: 10px;
 }
 iframe {
     border: none;
+    margin-top: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
 
-  
+  article{
+    background-color: #f5e9e0 ;
+    color: #1a1a1a;
+    border-radius: 20px;
+    width: 800px;
+    height: fit-content;
+    padding: 30px;
+    margin: 40px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #burguer {
+    height: 100vh;
+    width: 400px;
+    position: fixed;
+    top: 10vh;
+    right: -1000px;
+    transition: right .7s ease;
+    background: #1a1a1a no-repeat;
+}
+
+#burguer:target {
+    right: 0;
+}
+
+/* Ocultar el botón de cerrar por defecto */
+#cerrar {
+    display: none;
+}
+
+/* Cuando el panel está visible, oculto el botón de abrir y mostrar el de cerrar */
+#burguer:target ~ header nav #abrir {
+    display: none;
+}
+
+#burguer:target ~ header nav #cerrar {
+    display: inline-block;
+}
+.burgir{
+    display: block;
+    text-align: center;
+    background-color: #f5e9e0;
+    border: 5px solid #4c1c24;
+    font-size: 2rem;
+    
+}
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  padding: 2rem;
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  background-color: #1a1a1a;
+  height: 10vh;
+}
+
+#ladologo {
+  font-style: normal;
+  font-size: larger;
+  padding: 30px;
+}
