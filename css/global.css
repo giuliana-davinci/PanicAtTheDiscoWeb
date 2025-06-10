@@ -27,6 +27,13 @@
     text-shadow: 2px 2px #1a1a1a;
   }
 
+img{
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 20px;
+
+}
 .contenedor{
     text-align: center;
     margin: 0 auto;
@@ -58,7 +65,9 @@ iframe {
     top: 10vh;
     right: -1000px;
     transition: right .7s ease;
-    background: #1a1a1a no-repeat;
+    background: #4c1c24 no-repeat;
+    z-index: 1100; /* + alto q tapado */
+
 }
 
 #burguer:target {
@@ -81,10 +90,11 @@ iframe {
 .burgir{
     display: block;
     text-align: center;
-    background-color: #f5e9e0;
-    border: 5px solid #4c1c24;
-    font-size: 2rem;
-    
+    background-color: #f5e9e0 !important;
+    border: 5px solid #1a1a1a;
+    color: #1a1a1a;    
+    font-size: 30px;
+    font-weight: 700
 }
 nav {
   display: flex;
@@ -109,10 +119,36 @@ header {
   display: flex;
   background-color: #1a1a1a;
   height: 10vh;
+  justify-content: space-between;
 }
 
 #ladologo {
   font-style: normal;
   font-size: larger;
-  padding: 30px;
+  padding: 30px; 
+}
+
+#tapado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 900;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  transition: background-color 1s ease, opacity 0.5s ease;
+  pointer-events: none;
+}
+#burguer:target ~ #tapado {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.621);
+  pointer-events: auto;
+}
+p{
+  margin: 10px auto;
+}
+figcaption{
+  font-style: italic;
+  font-size:18px;
 }
