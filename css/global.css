@@ -27,6 +27,7 @@
     text-shadow: 2px 2px #1a1a1a;
   }
 
+
 img{
   width: 80%;
   height: auto;
@@ -42,6 +43,7 @@ img{
 iframe {
     border: none;
     margin-top: 10px;
+    margin-bottom: 30px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
@@ -152,3 +154,53 @@ figcaption{
   font-style: italic;
   font-size:18px;
 }
+legend span{
+  text-align: center;
+  color: #1a1a1a;
+
+
+}
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #f5e9e0;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  text-align: left;
+  font-weight: bold;
+  color: #1a1a1a;
+  
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #4c1c24;
+  color: #f5e9e0;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #1a1a1a;
+}
+

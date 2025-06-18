@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!--Burguer menu-->
+  <div id="burguer">
+    <a href="../index.html" class="burgir">El Álbum</a>
+    <a href="../pages/moodboard.html" class="burgir">Moodboard</a>
+    <a href="../pages/curiosidades.html" class="burgir">Curiosidades</a>
+    <a href="../pages/contacto.html" class="burgir">Contacto</a>
+  </div>
+  <div id="tapado"></div>
+
+  <header>
+    <h1 id="ladologo">Velvet Fever</h1>
+    <nav>
+      <a href="#burguer" id="abrir">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg>
+      </a>
+      <a href="#" id="cerrar">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <div class="contenedor">
+    <main>
+      <h1>Panic! At The Disco</h1>
+
+      <section>
+        <h2>A Fever You Can't Sweat Out</h2>
+      </section>
+
+      <section class="formulario">
+        <br>
+        <h2><em>¿Querés compartir tu opinión?</em></h2>
+        <p>Contanos qué te pareció el sitio, si sumarías algo o si tenés alguna teoría sobre Panic! At The Disco.</p>
+
+        <form action="gracias.html" method="post">
+          <fieldset>
+            <legend><span>Datos Personales</span></legend>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre..." required>
+
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribí tu apellido..." required>
+
+            <label for="feedback">Comentario / Teoría</label>
+            <textarea id="feedback" name="feedback" rows="5" placeholder="Contanos tu teoría o sugerencia..." required></textarea>
+
+            <button type="submit">Enviar</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
+
