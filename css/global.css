@@ -154,12 +154,11 @@ figcaption{
   font-style: italic;
   font-size:18px;
 }
-legend span{
-  text-align: center;
+legend {
   color: #1a1a1a;
-
-
+  margin: 0 auto;
 }
+
 form {
   max-width: 600px;
   margin: 40px auto;
